@@ -1,0 +1,38 @@
+table {
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    height: 2em;
+    width: 9em;
+    text-align: center;
+}
+
+.calendar-div {
+    display: flex;
+}
+
+.date {
+    border: 0;
+}
+
+.date-time {
+    width: 6em;
+    padding-right: .5em;
+    text-align: right;
+    border-color: transparent;
+}
+
+#extra {
+    height: .8em;
+}
+
+.time-full {
+    border-bottom-style: dashed;
+}
+
+.time-half {
+    border-top-style: dashed;
+}

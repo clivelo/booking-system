@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Booking System</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Room Booking System</h1>
+    <label for="room">Choose a room:</label>
+    <select name="room" id="room">
+        <option value="ABERDEEN">Aberdeen</option>
+        <option value="LANTAU">Lantau</option>
+        <option value="STANLEY">Stanley</option>
+    </select>
+    <br />
+    <label>Choose a date:</label>
+    <input type="date" id="date" placeholder="yyyy-mm-dd" />
+    <script src="{{url_for('static', filename='curr_date.js')}}"></script>
+
+    <div class="calendar-div">
+        <table id="time-column">
+        </table>
+        <table id="calendar">
+            <tr>
+                <td class="date">Mar 5</td>
+                <td class="date">Mar 6</td>
+                <td class="date">Mar 7</td>
+                <td class="date">Mar 8</td>
+                <td class="date">Mar 9</td>
+                <td class="date">Mar 10</td>
+                <td class="date">Mar 11</td>
+            </tr>
+        </table>
+    </div>
+    <script src="{{url_for('static', filename='calendar.js')}}"></script>
+</body>
+</html>
